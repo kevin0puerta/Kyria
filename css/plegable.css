@@ -1,0 +1,79 @@
+.opciones{
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    color: #ffff;  
+}
+.aparecer{
+    animation: 0.1s aparecer steps(1) forwards;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 100%;
+        z-index: 999999;
+        height: 0%;
+        width: 0%;
+        position: absolute;
+    }
+    100%{
+        opacity: 100%;
+        z-index: 999999;
+        height: 359%;
+        width: 100%;
+        position: absolute;
+    }
+}
+.opaco{
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 45%;
+    font-size: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+}
+.movopaco{
+    animation: 0.1s plegable steps(1) forwards
+}
+@keyframes plegable{
+    0%{
+        opacity: 100%;
+        z-index: 9999999;
+        height: 0%;
+        width: 0%;
+        font-size: 0;
+        position: fixed;
+    }
+    100%{
+        opacity: 100%;
+        z-index: 9999999;
+        font-size: 5vh;
+        position: fixed;
+    }
+}
+.ini{
+    color: white;
+    text-decoration: none;
+}
+.ini:hover{
+    color: rgb(180, 121, 12);
+    font-size: 6vh;
+}
+.per{
+    color: white;
+    text-decoration: none;
+}
+.per:hover{
+    color: rgb(180, 121, 12);
+    font-size: 6vh;
+}
+.qui{
+    color: white;
+    text-decoration: none;
+}
+.qui:hover{
+    color: rgb(180, 121, 12);
+    font-size: 6vh;
+}

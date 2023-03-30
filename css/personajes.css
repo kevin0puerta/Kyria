@@ -1,0 +1,78 @@
+
+.personajes{
+    text-align: center;
+    position: relative;
+}
+
+.grid-personajes {
+    display: grid;
+    margin: 0 15vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.personaje{
+    position: relative;
+    height: 57vh;
+    width: 36vh;
+    background-color: rgb(15, 15, 15);
+    margin-left: 11vh;
+    border-radius: 5vh;
+    margin-top: 6vh;
+}
+.oli{
+    position: absolute;
+    height: 93%;
+    margin-left: 25%;
+    top: 4%;
+}
+.oli1{
+    position: absolute;
+    height: 93%;
+    top: 4%;
+}
+.oli2{
+    position: absolute;
+    height: 93%;
+    margin-left: 20%;
+    top: 4%;
+}
+
+.deco{
+    position: absolute;
+    top: 5vh;
+    left: -4vh;
+    width:52vh;
+    height: 48vh;
+}
+
+.ss{
+    z-index: 100;
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 10vh;
+}
+.ee{
+    z-index: 101;
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 8vh;
+}
+
+.tt{
+    z-index: 102;
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 11vh;
+}
+
+@media screen and (max-width: 1440px){
+    .ss{
+        margin-left: 5vh;
+    }
+    .ee{ 
+        margin-left: 2vh;
+    }
+    .tt{
+        margin-left: 6vh;
+    }
+}

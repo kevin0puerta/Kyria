@@ -1,0 +1,67 @@
+.proyecto2{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 4vh;
+    width: 80%;
+    height: 0px;
+}
+.Alejandro2{
+    margin-top: 5%;
+    height: 56vh;
+    width: 100%;
+}
+.contenido2{
+    background-color: rgb(255, 255, 255);
+    height: 174vh;
+    width: 50%;
+    margin: auto auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 3vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.text2{
+    width: 80%;
+    margin: auto auto;
+    text-align: center; 
+}
+
+
+.Alejandr2{
+    height: 48vh;
+}
+
+.footer3{
+    background-image: url(./fodno.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -10vh;
+    width: 100%;
+    height: 25vh;
+    margin-top: -10vh;
+    display: flex;
+    position: absolute;
+}
+.mover{
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 40vh;
+}
+.li2{
+    position: absolute;
+    margin-top: -22vh;
+    margin-left: 58vw;
+    padding-bottom: 0;
+}
+.titulo{
+    width: 20%;
+}
+.titul{
+    width: 20%;
+}
+.cuerpo{
+    display: flex;
+    position: relative;
+}

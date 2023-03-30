@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    padding: 0px;
+}
+.header2{
+    background-color: white;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    z-index: 100000;
+}
+
+.logo2{
+    width: 20vh;
+    z-index: 10;
+    
+}
+.wiii{
+    display: flex;
+    justify-content: center;
+}
+.logo2:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=80);
+    width: 30vh;
+}
+.burger{
+    background-color: rgba(255, 255, 255, 0);
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999999;
+    margin-top: -1vh;
+    margin-left: 2vh;
+    position: fixed;
+}
+.contenido{
+    background-color: rgb(255, 255, 255);
+    height: 140vh;
+    width: 50%;
+    margin: auto auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 3vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.alejandro2{
+    background-color: rgb(24, 23, 23);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 3vh;
+    border-color: rgb(238, 214, 0);
+    height: 30vh;
+    width: 15vw;
+}
+.alejo2{
+    height: 26vh;
+    margin-top: 1vh;
+    margin-left: 4vw;
+}
+.infoalejo{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-right: 4vh;
+}
+.filipo2{
+    background-color: rgb(24, 23, 23);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 3vh;
+    border-color: rgb(238, 214, 0);
+    height: 30vh;
+    width: 15vw;
+}
+.fili2{
+    height: 26vh;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+.infofilipo{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-right: 4vh;
+}
+.olimpia2{
+    background-color: rgb(24, 23, 23);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 3vh;
+    border-color: rgb(238, 214, 0);
+    height: 30vh;
+    width: 15vw;
+    position: relative;
+}
+.oli2{
+    height: 96%;
+    margin-left: 30%;
+}
+.infolimpia{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-right: 4vh;
+}
+.ver{
+    position: absolute;
+    width: 9vw;
+    margin-left: 45%;
+    margin-top: -2vh;
+}
+.footer2{
+    background-image: url(./fodno.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -10vh;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    position: relative;
+    bottom: 0;
+}
+.mover{
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 40vh;
+}
+.li2{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: -2%;
+    height: 10%;
+    margin-bottom: 0 ;
+}
+.po2{
+    display: flex;
+}
+.nombre{
+    background-color: rgb(238, 214, 0);
+    border-radius: 0% 0% 10px 10px;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.botonolimpia{
+    margin-top: 101%;
+}
+
+@media screen and (max-width: 1440px){
+    .botonolimpia{
+        margin-top: 90%;
+    }
+    .li2{
+        margin-left: 72%;
+    }
+}

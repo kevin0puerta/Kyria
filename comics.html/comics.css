@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pagina */ 
+
+@font-face {
+    font-family: pixel-font;
+    src: url(../pixelfont.ttf);
+}
+
+.video2{
+    background-color: black;
+    position: absolute;
+    z-index: 999999;
+    height: 75%;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    border-radius: 15px;
+    animation: movvideo2 7s forwards;
+}
+@keyframes movvideo2 {
+    0%{
+        opacity: 100%;
+        width: 75%;
+        height: 75%;
+        z-index: 999999;
+    }
+    99%{
+        opacity: 100%;
+        width: 75%;
+        height: 75%;
+        z-index: 999999;
+    }
+    100%{
+        opacity: 0%;
+        width: 0%;
+        height: 0%;
+        z-index: 1;
+    }
+}
+
+.audio2{
+    opacity: 50%;
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*flechas  */
+
+.espada{
+    position: absolute;
+    height: 0%;
+    margin-top: 43%;
+}
+.movespada{
+    animation: flecha 2s 5s forwards;
+}
+@keyframes flecha {
+    100%{
+        height: 25%;
+    }
+}
+.espada:hover{
+    width: 80%;
+}
+.flecha{
+    background-color:  rgb(187, 13, 13);
+    position:absolute;
+     width: 0%; 
+    height: 10%;
+    align-items: center;
+    right: 0;
+     margin-right: 15%; 
+    margin-top: 20%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: -3px 3px 4px 5px rgba(0, 0, 0, 0.226);
+}
+ .movflecha{
+    animation: siguiente 2s 5s forwards;
+}
+@keyframes siguiente {
+    100%{
+        width: 4%;
+        margin-right: 8%;
+    }
+}  
+
+
+.espada1{
+    position: absolute;
+    height: 25%;
+    margin-top: 43%;
+    margin-left: 5%;
+}
+.espada1:hover{
+    width: 80%;
+    margin-left: 20%;
+}
+.flecha1{
+    background-color:  rgb(187, 13, 13);
+    position:absolute;
+     width: 4%; 
+    height: 10%;
+    align-items: center;
+    left: 0;
+    margin-left: 9%; 
+    margin-top: 20%;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 3px 3px 4px 5px rgba(0, 0, 0, 0.226);
+}
+
+/* comic */
+
+ .salon{
+    display: flex;
+    position: absolute;
+    background-image: url(../comics.html/img/salon.png);
+    background-size:100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    height: 75%;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    border-radius: 15px;
+}
+.hombres{
+    display: flex;
+    position: absolute;
+    background-image: url(../comics.html/img/multitud1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45%;
+    width: 50%;
+    margin-top: 25%;
+    z-index: 9000;
+    animation: hombres 2s infinite linear; 
+    cursor: pointer;
+}
+@keyframes hombres{
+    50%{
+        margin-top: 23%;
+        height: 49%;
+    }
+    100%{
+        margin-top: 25%;
+        height: 45%;
+    }
+}  
+ 
+.movhombres{   
+    animation: muchoshombres 1s forwards;
+}
+@keyframes muchoshombres{
+    99%{
+        margin-top: 25%;
+        height: 45%;
+        background-position-x: -100vh;
+    }
+    100%{
+        height: 0%;
+    }
+}
+
+
+
+.mujeres{
+    display: flex;
+    position: absolute;
+    background-image: url(../comics.html/img/multitud.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: 0;
+    height: 45%;
+    width: 60%;
+    margin-top: 25%;
+    z-index: 10000;
+    cursor: pointer;
+     animation: mujeres 3s infinite linear;  
+}
+ @keyframes mujeres{
+    50%{
+        margin-top: 23%;
+        height: 49%;
+    }
+    100%{
+        margin-top: 25%;
+        height: 45%;
+    }
+} 
+  
+.movmujeres{   
+    animation: muchasmujeres 1s forwards;
+}
+@keyframes muchasmujeres{
+    99%{
+        margin-top: 25%;
+        height: 45%;
+        background-position-x: 100vh;
+    }
+    100%{
+        height: 0%;
+    }
+}
+
+
+.guardia2{
+    display: flex;
+    position: absolute;
+    background-image: url(../comic..html/img/izquierdoguardia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 15%;
+    margin-top: 22%;
+    margin-left: 50%;
+    z-index: 8000;
+    cursor: pointer;
+}
+.movguardia2{
+    animation: mover2 2s forwards linear;
+}
+@keyframes mover2 {
+    100%{
+        margin-left: 70%;
+    }
+}
+ 
+.guardia1{
+    display: flex;
+    position: absolute;
+    background-image: url(../comic..html/img/derechoguardia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 15%;
+    margin-top: 22%;
+    margin-left: 34%; 
+    z-index: 7000;
+    cursor: pointer;
+}
+.movguardia1{
+    animation: mover1 2s forwards linear;
+}
+@keyframes mover1 {
+    100%{
+        margin-left: 14%;
+    }
+}
+
+.alejandro{
+    position: absolute;
+    background-image: url(../comics.html/img/alejosecuencia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 14%;
+    margin-top: 17%;
+    margin-left: 45%;
+    z-index: 6000;
+    cursor: pointer;
+}
+.movalejo{
+    animation: alejandro 1s steps(8) forwards ;
+}
+@keyframes alejandro {
+    100%{
+        background-position-x: 98%;
+        margin-left: 47%;
+    }
+}
+.olimpia{
+    position: absolute;
+    background-image: url(../comics.html/img/olimpia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 13%;
+    margin-top: 16%;
+    margin-left: 38%;
+    cursor: pointer;
+}
+.movolimpia{
+    animation: olimpia 1s steps(12) forwards;
+}
+@keyframes olimpia {
+    100%{
+        background-position-x: 99%;
+        margin-left: 41%;
+    }
+}
+
+
+/* footer */
+
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 100000;
+}
+
+.logo{
+    border-radius: 0px 0px 20px 0px;
+    padding: 1.5% 2% 1% 0.5%;
+    background-color: rgb(0, 0, 0);
+    width: 10%;
+}
+.fodno{
+    background-image: url(../css/fodno.png);
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+} 
+
+/* blah */
+
+.blah{
+    position: absolute;
+    background-image: url(../comics.html/img/blah.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6%;
+    width: 10%;
+    margin-top: 14%;
+    margin-left: 5%;
+    animation: blah 1s steps(4) infinite;   
+}
+.oblah{
+    animation: ooblah 0s linear forwards;
+}
+@keyframes blah {
+    100%{
+        background-position-y: 150%;
+        margin-top: 5%;
+    }
+}
+@keyframes ooblah{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.blah1{
+    position: absolute;
+    background-image: url(../comics.html/img/blah.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6%;
+    width: 10%;
+    margin-top: 14%;
+    margin-left: 35%;
+    animation: blah1 2s steps(4) infinite;   
+}
+.oblah1{
+    animation: ooblah1 0s linear forwards;
+}
+@keyframes blah1 {
+    100%{
+        background-position-y: 150%;
+        margin-top: 5%;
+    }
+}
+@keyframes ooblah1{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.blah2{
+    position: absolute;
+    background-image: url(../comics.html/img/blah.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6%;
+    width: 10%;
+    margin-top: 14%;
+    margin-left: 55%;
+    animation: blah2 1s steps(4) infinite;   
+}
+.oblah2{
+    animation: ooblah2 0s linear forwards;
+}
+@keyframes blah2 {
+    100%{
+        background-position-y: 150%;
+        margin-top: 5%;
+    }
+}
+@keyframes ooblah2{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.blah3{
+    position: absolute;
+    background-image: url(../comics.html/img/blah.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6%;
+    width: 10%;
+    margin-top: 14%;
+    margin-left: 85%;
+    animation: blah3 1.5s steps(4) infinite;   
+}
+.oblah3{
+    animation: ooblah3 0s linear forwards;
+}
+@keyframes blah3 {
+    100%{
+        background-position-y: 150%;
+        margin-top: 5%;
+    }
+}
+@keyframes ooblah3{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+/* texto */
+
+.texto2{
+    position: absolute;
+    height: 31.5%;
+    width: 0%;
+    margin-top: 31%;
+    overflow: hidden;
+    z-index: 10000;
+    margin-left: 21%;
+}
+.cuadro2{
+    width: 71%;
+    
+ }
+.movcuadro2{
+    animation: cuadro2 0.5s 1s forwards;
+}
+@keyframes cuadro2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+} 
+
+
+.t-principal2{
+    margin-top: 33%;
+    margin-left: 27.5%;
+    position: absolute;
+    overflow: auto;
+    height: 0%;
+    width:45%;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    font-family: pixel-font;
+    z-index: 999999999;
+}
+.movtext2{
+    animation: text2 1s 1.5s steps(6) forwards;
+}
+@keyframes text2 {
+    0%{
+        height: 0%;
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        height: 24%;
+    }
+} 
+
+
+/* fotter */
+
+.advice {
+    display: none;
+}
+
+@media screen and ( orientation: portrait ) {
+    .advice {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        z-index: 9999999;
+    }
+}
+
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end;
+}
+.redes{
+    margin-left: 2%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1%;
+}
+.Red{
+    height: 5vh;
+    border-radius: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 1vh;
+}
+.Red:hover {
+    height: 5vh;
+}
+.contactos{
+    margin-left: 8%;
+    width: 50%;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    font-family: 'Hind', sans-serif;
+    font-size: 2vh;
+}
+.poli{
+    width: 100%;
+    margin-left: 40%;
+    display: flex;
+    font-size: 2vh;
+    color: rgb(71, 69, 69);
+    margin-top: 3%;
+}
+.po{
+    margin-right: 2%;
+}
+b{
+    margin-left: 2%;
+    color: rgb(104, 2, 2);
+}
+
+.infotter{
+    text-align: center;
+}
+
+
+.advice {
+    display: none;
+}
+
+@media screen and ( orientation: portrait ) {
+    .advice {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        z-index: 9999999;
+        font-size: 800%;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .audio2{
+        height: 20px;
+    }
+    header{
+        height: 9%;
+    }
+    .hombres{
+    margin-top: 22.2%;
+    }
+    @keyframes hombres{
+        50%{
+            margin-top: 20.2%;
+            height: 50.2%;
+        }
+        100%{
+            margin-top: 22.2%;
+            height: 45.2%;
+        }
+    }  
+    .mujeres{
+        margin-top: 22.4%;
+    }
+    @keyframes mujeres{
+        50%{
+            margin-top: 20%;
+            height: 50.6%;
+        }
+        100%{
+            margin-top: 22.4%;
+            height: 45%;
+        }
+    }  
+    .guardia1{
+        height: 52%;
+        margin-top: 19%;
+    }
+    .guardia2{
+        height: 52%;
+        margin-top: 19%;
+    }
+    .texto2 {
+        margin-top: 28%;
+    }
+    .t-principal2{
+        margin-top: 30%;
+    }
+}

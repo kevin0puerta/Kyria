@@ -1,0 +1,54 @@
+@font-face {
+    font-family: pixel-font;
+    src: url(../pixelfont.ttf);
+}
+
+.castillo{
+    margin-top: -4vh;
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    background-image: url(./fodno.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paisaje{
+    width: 73vw;
+    margin-top: 6vh;
+}
+
+.play{
+    z-index: 99999;
+    position: relative;
+    width: 32%;
+    border-width: 10px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(175, 0, 0);
+    margin-top: 20%;
+    margin-left: 33%;
+    font-family: pixel-font;
+    font-size: 5vh;
+    border-color: #ffec41;
+}
+
+.play1{
+    position: absolute;
+    background:#B3FFAB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    width: 32%;
+    height: 12%;
+    border-width: 10px;
+    border-radius: 50px;
+    margin-top: 20%;
+    margin-left: 33%;
+    filter: blur(10px);
+}
+
+@media screen and (max-width: 1440px){
+    .paisaje{
+        width: 63vw;
+    }
+}

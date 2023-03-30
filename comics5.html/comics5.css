@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pagina */ 
+
+@font-face {
+    font-family: pixel-font;
+    src: url(../pixelfont.ttf);
+}
+.cerezo{
+    display: flex;
+    position: absolute;
+    background-image: url(../comics5.html/img/cerezo.jpg);
+    background-color: black;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75%;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.video5{
+    background-color: black;
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    border-radius: 15px;
+    
+}
+.movvideo5{
+    animation: video5 0.1s steps(1) forwards;
+} 
+
+@keyframes video5 {
+    from{
+        height: 0%;
+        width: 0%;
+    }
+    to{
+        height: 100%;
+        width: 100%;
+    }
+} 
+
+.audio5{
+    opacity: 50%;
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+    width: 70%;
+    margin-left: 15%;
+}
+ 
+/*flechas  */
+
+.espada5{
+    position: absolute;
+    font-size: 0%;
+    font-family: pixel-font;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.movespada5{
+    animation: flecha5 2s 5s forwards;
+}
+@keyframes flecha5 {
+    100%{
+        font-size: 300%;
+    }
+}
+
+.flecha5{
+    background-color:  rgb(187, 13, 13);
+    position:absolute;
+     width: 0%; 
+    height: 10%;
+    align-items: center;
+    right: 0;
+     margin-right: 15%; 
+    margin-top: 20%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: -3px 3px 4px 5px rgba(0, 0, 0, 0.226);
+}
+ .movflecha5{
+    animation: siguiente5 2s 5s forwards;
+}
+@keyframes siguiente5 {
+    100%{
+        width: 7%;
+        margin-right: 5%;
+    }
+}  
+
+
+
+.espada{
+    position: absolute;
+    height: 25%;
+    margin-top: 43%;
+    margin-left: 5%;
+}
+.espada:hover{
+    width: 80%;
+    margin-left: 20%;
+}
+.flecha{
+    background-color:  rgb(187, 13, 13);
+    position:absolute;
+     width: 4%; 
+    height: 10%;
+    align-items: center;
+    left: 0;
+    margin-left: 9%; 
+    margin-top: 20%;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 3px 3px 4px 5px rgba(0, 0, 0, 0.226);
+}
+
+/* footer */
+
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 100000;
+}
+
+.logo{
+    border-radius: 0px 0px 20px 0px;
+    padding: 1.5% 2% 1% 0.5%;
+    background-color: rgb(0, 0, 0);
+    width: 10%;
+}
+.fodno{
+    background-image: url(../css/fodno.png);
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+} 
+
+
+/* texto */
+
+.texto5{
+    position: absolute;
+    height: 31.5%;
+    width: 0%;
+    margin-top: 31%;
+    overflow: hidden;
+    z-index: 10000;
+    margin-left: 21%;
+}
+.cuadro5{
+    width: 71%;
+    
+ }
+.movcuadro5{
+    animation: cuadro5 0.5s 1s forwards;
+}
+@keyframes cuadro5 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+} 
+
+
+.t-principal5{
+    margin-top: 33%;
+    margin-left: 27.5%;
+    position: absolute;
+    overflow: auto;
+    height: 0%;
+    width:45%;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    font-family: pixel-font;
+    z-index: 999999999;
+}
+.movtext5{
+    animation: text5 1s 1.5s steps(6) forwards;
+}
+@keyframes text5 {
+    0%{
+        height: 0%;
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        height: 24%;
+    }
+} 
+
+
+/* fotter */
+
+.advice {
+    display: none;
+}
+
+@media screen and ( orientation: portrait ) {
+    .advice {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        z-index: 9999999;
+    }
+}
+
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end;
+}
+.redes{
+    margin-left: 2%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1%;
+}
+.Red{
+    height: 5vh;
+    border-radius: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 1vh;
+}
+.Red:hover {
+    height: 5vh;
+}
+.contactos{
+    margin-left: 8%;
+    width: 50%;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    font-family: 'Hind', sans-serif;
+    font-size: 2vh;
+}
+.poli{
+    width: 100%;
+    margin-left: 40%;
+    display: flex;
+    font-size: 2vh;
+    color: rgb(71, 69, 69);
+    margin-top: 3%;
+}
+.po{
+    margin-right: 2%;
+}
+b{
+    margin-left: 2%;
+    color: rgb(104, 2, 2);
+}
+
+.infotter{
+    text-align: center;
+}
+
+
+.advice {
+    display: none;
+}
+
+@media screen and ( orientation: portrait ) {
+    .advice {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        z-index: 9999999;
+        font-size: 800%;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .audio5{
+        height: 20px;
+    }
+    header{
+        height: 9%;
+    }
+    .texto5{
+        margin-top: 28%;
+    }
+    .t-principal5{
+        margin-top: 30%;
+    }
+    .espada5{
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+}

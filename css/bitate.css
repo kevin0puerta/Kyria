@@ -1,0 +1,45 @@
+.caballero{
+    height: 900px;
+    width: 76%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0% 0% 0% 15%;
+    background-color: rgb(255, 255, 255);
+}
+.proyecto{
+    margin-top: 5%;
+    font-size: 100%;
+}
+
+.alejo{
+    margin-left: 13%;
+    margin-top: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Alejandro{
+    height: 50%;
+}
+
+
+
+.cuerpo{
+    font-family: 'Hind', sans-serif;
+    font-size: 3vh;
+}
+
+@media screen and (max-width: 1440px){
+    .Alejandro{
+        height: 30%;
+    }
+    .caballero{
+        height: 400px;
+    }
+    .alejo{
+        margin-top: 10%;
+    }
+    .proyecto{
+        margin-top: 10%;
+    }
+}

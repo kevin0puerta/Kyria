@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fa;
+    font-family: 'calibri';
+}
+
+.advice {
+    display: none;
+}
+
+@media screen and ( orientation: portrait ) {
+    .advice {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        z-index: 999999999;
+        font-size: 200%;
+    }
+}
+
+.botoncito{
+    z-index: 1001;
+}
+
+
+
+.search{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.castillo3{
+    margin-top: -4vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/rojo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.letra{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 92vh;
+    margin-top: 30vh;
+    z-index: 20;
+}
+
+.lista{
+    background-color: white;
+    height: 70vh;
+    width: 68%;
+    margin-left: 35vh;
+}
+
+.texto{
+    max-height: 40vh;
+    width: 70vh;
+}
+.titulo{
+    width: 50vh;
+    font-size: 10vh;
+    font-family: 'Bebas Neue', cursive;
+}
+.tit{
+    width: 20vh;
+    border-style: solid;
+    border-color: red;
+    border-width: 0.5vh 0vh 0vh 0vh;
+}
+
+.persona{
+    padding-top: 2vh;
+    position: inherit;
+    font-size: 16vh;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    border-style: dashed;
+    border-width: 1vh 0vh 0vh 0vh;
+    border-color: rgb(241, 241, 241);
+}
+
+.deco1{
+    position: relative;
+    margin-top: 16vh;
+}
+.personaje2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vh;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5vh;
+    margin-top: 6vh;
+}
+.deco2{
+    position: relative;
+    margin-top: 16vh;
+}
+.ale{
+    position: inherit;
+    margin-top: 1vh;
+    height: 55vh;
+}
+.personaje3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vh;
+    background-color: rgb(202, 202, 202);
+    margin-right: 20vh;
+    border-radius: 5vh;
+    margin-top: 6vh;
+}
+.deco3{
+    position: relative;
+    margin-top: 16vh;
+}
+.fili{
+    position: inherit;
+    margin-top: 1vh;
+
+    height: 55vh;
+}
+.abajo{
+    height: 20vh;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    margin-bottom: 2vh;
+}
+.abajo:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.caballer{
+    position: relative;
+    display: flex;
+    height: 70vh;
+    background-color: rgb(241, 241, 241);
+}
+.list{
+    background-color: white;
+    height: 70vh;
+    width: 68%;
+    margin-left: 35vh;
+}
+.proyect{
+    margin-top: 10vh;
+    float: left;
+}
+.text{
+    max-height: 40vh;
+    width: 70vh;
+}
+.footer{
+    background-image: url(./fodno.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.redes{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-left:130%;
+    border-style: solid;
+    border-width: 0vh 0vh 0.2vh 0vh;
+    border-color: rgb(184, 0, 0);
+}
+.Red{
+    height: 8vh;
+    border-radius: 2vh;
+    margin-right: 3vh;
+    margin-bottom: 1vh;
+}
+.Red:hover {
+    height: 9vh;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-left: 96%;
+    color: rgb(71, 69, 69);
+    font-family: 'Hind', sans-serif;
+    font-size: 100%;
+    width: 17vw;
+}
+.poli{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2vh;
+    color: rgb(71, 69, 69);
+    margin-top: 35%;
+    margin-left: 95%;
+    width: 100%;
+    height: 10%;
+}
+b{
+    color: rgb(104, 2, 2);
+}
+@media screen and (max-width: 1440px){
+    .contactos{
+        margin-left: 85%;
+        width: 26vw;
+    }
+}
